@@ -177,3 +177,83 @@ root@adsp-sc589-mini:/sys/kernel/debug/clk# cat clk_summary
 root@adsp-sc589-mini:/sys/kernel/debug/clk#                                                                                                                                               
 ```
 
+```
+                                                                                                                                                                                          
+root@adsp-sc594-som-ezkit:~# cat /sys/kernel/debug/clk/clk_summary                                                                                                                        
+                                 enable  prepare  protect                                duty  hardware                            connection                                             
+   clock                          count    count    count        rate   accuracy phase  cycle    enable   consumer                         id                                             
+---------------------------------------------------------------------------------------------------------------------------------------------                                             
+ dummy                               0       0        0        0           0          0     50000      Y   deviceless                      no_connection_id                               
+ sys_clkin1                          0       0        0        25000000    0          0     50000      Y   clocks@3108d000                 sys_clkin1                                     
+                                                                                                           deviceless                      no_connection_id                               
+ sys_clkin0                          2       2        0        25000000    0          0     50000      Y   clocks@3108d000                 sys_clkin0                                     
+                                                                                                           deviceless                      no_connection_id                               
+    cgu0_df                          1       1        0        25000000    0          0     50000      Y      deviceless                      no_connection_id                            
+       cgu0_vco                      1       1        0        2000000000  0          0     50000      Y         deviceless                      no_connection_id                         
+          cgu0_pllclk                2       2        0        2000000000  0          0     50000      Y            deviceless                      no_connection_id                      
+             cgu0_s1selexdiv         0       0        0        333333334   0          0     50000      Y               deviceless                      no_connection_id                   
+                cgu0_sclk1sel        0       0        0        333333334   0          0     50000      Y                  deviceless                      no_connection_id                
+                   sclk1_0           0       0        0        333333334   0          0     50000      N                     deviceless                      no_connection_id             
+                      spdif_sel      0       0        0        333333334   0          0     50000      Y                        deviceless                      no_connection_id          
+                         spdif       0       0        0        333333334   0          0     50000      N                           deviceless                      no_connection_id       
+             cgu0_odiv               0       0        0        125000000   0          0     50000      Y               deviceless                      no_connection_id                   
+                oclk_0               0       0        0        125000000   0          0     50000      N                  deviceless                      no_connection_id                
+                   lpddr_sel         0       0        0        125000000   0          0     50000      Y                     deviceless                      no_connection_id             
+                      lpddr          0       0        0        125000000   0          0     50000      N                        deviceless                      no_connection_id          
+             cgu0_ddiv               0       0        0        1000000000  0          0     50000      Y               deviceless                      no_connection_id                   
+                dclk_0               0       0        0        1000000000  0          0     50000      N                  deviceless                      no_connection_id                
+             sysclk_0                1       1        0        500000000   0          0     50000      Y               deviceless                      no_connection_id                   
+                ospi_sel             0       0        0        500000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   ospi              0       0        0        500000000   0          0     50000      N                     deviceless                      no_connection_id             
+                cgu0_s1seldiv        0       0        0        250000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                cgu0_s0seldiv        1       1        0        125000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   sclk0_0           6       6        0        125000000   0          0     50000      Y                     31002400.i2s                    sclk                         
+                                                                                                                             31008000.watchdog               adi-watchdog                 
+                                                                                                                             31003000.uart                   sclk0                        
+                                                                                                                             31001600.twi                    sclk0                        
+                                                                                                                             gptimers@31018000               no_connection_id             
+                                                                                                                             deviceless                      no_connection_id             
+                      trace_sel      0       0        0        125000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         trace       0       0        0        125000000   0          0     50000      N                           deviceless                      no_connection_id       
+                      lp_sel         0       0        0        125000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         lp          0       0        0        125000000   0          0     50000      N                           deviceless                      no_connection_id       
+                      gige_sel       1       1        0        125000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         gige        1       1        0        125000000   0          0     50000      Y                           31040000.ethernet               stmmaceth              
+                                                                                                                                   deviceless                      no_connection_id       
+                      spi_sel        1       1        0        125000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         spi         1       1        0        125000000   0          0     50000      Y                           31030000.spi                    spi                    
+                                                                                                                                   deviceless                      no_connection_id       
+             cgu0_cdiv               2       2        0        1000000000  0          0     50000      Y               deviceless                      no_connection_id                   
+                cclk1_0              1       1        0        1000000000  0          0     50000      N                  deviceless                      no_connection_id                
+                   arm_sel           1       1        0        1000000000  0          0     50000      Y                     deviceless                      no_connection_id             
+                      arm            1       1        0        1000000000  0          0     50000      Y                        deviceless                      no_connection_id          
+                cclk0_0              2       2        0        1000000000  0          0     50000      Y                  deviceless                      no_connection_id                
+                   sharc1_sel        1       1        0        1000000000  0          0     50000      Y                     deviceless                      no_connection_id             
+                      sharc1         1       1        0        1000000000  0          0     50000      Y                        deviceless                      no_connection_id          
+                   sharc0_sel        1       1        0        1000000000  0          0     50000      Y                     deviceless                      no_connection_id             
+                      sharc0         1       1        0        1000000000  0          0     50000      Y                        deviceless                      no_connection_id          
+    cgu1_in_sel                      1       1        0        25000000    0          0     50000      Y      deviceless                      no_connection_id                            
+       cgu1_df                       1       1        0        25000000    0          0     50000      Y         deviceless                      no_connection_id                         
+          cgu1_vco                   1       1        0        1600000000  0          0     50000      Y            deviceless                      no_connection_id                      
+             cgu1_pllclk             1       1        0        1600000000  0          0     50000      Y               deviceless                      no_connection_id                   
+                cgu1_s1selexdiv      0       0        0        50000000    0          0     50000      Y                  deviceless                      no_connection_id                
+                cgu1_odiv            0       0        0        100000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   oclk_1            0       0        0        100000000   0          0     50000      N                     deviceless                      no_connection_id             
+                      can_sel        0       0        0        100000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         can         0       0        0        100000000   0          0     50000      N                           deviceless                      no_connection_id       
+                cgu1_ddiv            1       1        0        800000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   dclk_1            1       1        0        800000000   0          0     50000      Y                     deviceless                      no_connection_id             
+                      cdu_ddr_sel    1       1        0        800000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         cdu_ddr     1       1        0        800000000   0          0     50000      Y                           deviceless                      no_connection_id       
+                sysclk_1             0       0        0        400000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   cgu1_s1seldiv     0       0        0        200000000   0          0     50000      Y                     deviceless                      no_connection_id             
+                      cgu1_sclk1sel  0       0        0        200000000   0          0     50000      Y                        deviceless                      no_connection_id          
+                         sclk1_1     0       0        0        200000000   0          0     50000      N                           deviceless                      no_connection_id       
+                   cgu1_s0seldiv     0       0        0        100000000   0          0     50000      Y                     deviceless                      no_connection_id             
+                      sclk0_1        0       0        0        100000000   0          0     50000      N                        deviceless                      no_connection_id          
+                cgu1_cdiv            0       0        0        800000000   0          0     50000      Y                  deviceless                      no_connection_id                
+                   cclk1_1           0       0        0        800000000   0          0     50000      N                     deviceless                      no_connection_id             
+                   cclk0_1           0       0        0        800000000   0          0     50000      N                     deviceless                      no_connection_id             
+root@adsp-sc594-som-ezkit:~#                                                                                                                                                              
+                                                                                                                                                                                          
+```
