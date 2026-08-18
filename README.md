@@ -1,3 +1,26 @@
+```
+---
+ drivers/usb/musb-new/musb_uboot.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/drivers/usb/musb-new/musb_uboot.c b/drivers/usb/musb-new/musb_uboot.c
+--- a/drivers/usb/musb-new/musb_uboot.c
++++ b/drivers/usb/musb-new/musb_uboot.c
+@@ -238,6 +238,11 @@ int musb_lowlevel_init(struct musb_host_data *host)
+ 		return -ENODEV;
+ 	}
+ 
++	/*
++	 * Allow the USB device/PHY to settle before the initial root-port reset.
++	 */
++	mdelay(500);
+ 	_musb_reset_root_port(host, NULL);
+ 	host->host->is_active = 1;
+ 	host->hcd.hcd_priv = host->host;
+-- 
+2.43.0
+```
+
 Pre clock changes Uboot
 ```
 => clk dump
