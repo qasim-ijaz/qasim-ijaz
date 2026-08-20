@@ -1,3 +1,45 @@
+```
+[    7.825503] adi-dwmac 31040000.ethernet: Using 32/32 bits DMA host/device width                                                            │
+[    7.859475] usbcore: registered new interface driver usb-storage                                                                           │
+[    7.869431] i2c_dev: i2c /dev entries driver                                                                                               │
+[    7.875848] adi_wdt: initialized: timeout=30 sec (nowayout=0)                                                                              │
+[    7.884097] sdhci: Secure Digital Host Controller Interface driver                                                                         │
+[    7.890297] sdhci: Copyright(c) Pierre Ossman                                                                                              │
+[    7.894691] Synopsys Designware Multimedia Card Interface Driver                                                                           │
+[    7.900988] sdhci-pltfm: SDHCI platform and OF driver helper                                                                               │
+[    7.909671] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 (0,8000003f) counters available                                          │
+[    7.921117] NET: Registered PF_PACKET protocol family                                                                                      │
+[    7.926341] 8021q: 802.1Q VLAN Support v1.8                                                                                                │
+[    7.930656] Key type dns_resolver registered                                                                                               │
+[    7.974262] registered taskstats version 1                                                                                                 │
+[    7.978794] Loading compiled-in X.509 certificates                                                                                         │
+[    8.055459] adi-dwmac 31040000.ethernet eth0: Register MEM_TYPE_PAGE_POOL RxQ-0                                                            │
+[    8.070809] adi-dwmac 31040000.ethernet eth0: PHY [stmmac-0:00] driver [Generic PHY] (irq=POLL)                                            │
+[    8.080758] adi-dwmac 31040000.ethernet eth0: No Safety Features support found                                                             │
+[    8.089836] adi-dwmac 31040000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported                                                  │
+[    8.098024] adi-dwmac 31040000.ethernet eth0: configuring for phy/rgmii-id link mode                                                       │
+[    8.111569] 8021q: adding VLAN 0 to HW filter on device eth0                                                                               
+[   12.199659] adi-dwmac 31040000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off                                                   
+[   12.222698] IP-Config: Guessing netmask 255.0.0.0                                                                                          
+[   12.227316] IP-Config: Complete:                                                                                                           
+[   12.230480]      device=eth0, hwaddr=02:80:ad:20:31:e8, ipaddr=10.42.0.2, mask=255.0.0.0, gw=255.255.255.255                               
+[   12.240410]      host=sc846, domain=, nis-domain=(none)                                                                                    
+[   12.245558]      bootserver=10.42.0.1, rootserver=10.42.0.1, rootpath=                                                                     
+[   12.246306] clk: Disabling unused clocks                                                                                                                                                                                           
+[   12.412783] Freeing unused kernel memory: 2816K                                                                                            
+[   12.417663] Run /init as init process                                                                                                      
+[   12.636227]                                                                                                                                
+[   12.636227]          Analog Initial Ram Filesystem                                                                                         
+[   12.636227]                 www.analog.com                                                                                                 
+[   12.636227]               www.yoctoproject.org                                                                                             
+[   12.636227]                                                                                                                                
+[   12.636227] Analog [Initramfs]: Preparing Operating System....                                                                             
+[   12.636227] Analog [Initramfs]: Mounting Root File System...                                                                               
+[   12.761914] Analog [Initramfs]: Switching RFS to NFS mount (tcp,nfsvers=3,10.42.0.1:/romfs)...                                             
+                                                                                                                                              
+```
+
+
 # Before
 ```
                                  enable  prepare  protect                                duty  hardware                            connection                                                          
