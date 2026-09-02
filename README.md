@@ -1,3 +1,6 @@
+<img width="1320" height="526" alt="image" src="https://github.com/user-attachments/assets/4ee015e7-0309-4490-b654-d0daa5628cb7" />
+
+
 ```
 adi_bootargs=earlyprintk=serial,uart0,115200 console=ttySC0,115200 vmalloc=512M                                                                                                                                                    
 adi_image_offset=0xd0000                                                                                                                                                                                                           
