@@ -1,3 +1,5 @@
+mkdir -p /proc /sys /dev /sys/kernel/debug ; mount -t proc proc /proc ; mount -t sysfs sysfs /sys ; mount -t devtmpfs devtmpfs /dev ; mount -t debugfs debugfs /sys/kernel/debug
+
 devmem 0x3108F004 32 0x00000003
 
 ```
