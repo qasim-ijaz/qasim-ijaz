@@ -1,4 +1,13 @@
+```
+devmem 0x3108E00C 32 0x02034581
 
+# Set CGU1 MSEL = 96
+# 25 MHz * 96 / (2 * 1) = 1.2 GHz
+devmem 0x3108E000 32 0x00036000
+
+# Allow PLL to relock
+sleep 1
+```
 
 ```
 adi_bootargs=earlyprintk=serial,uart0,115200 console=ttySC0,115200 vmalloc=512M                                                                                                                                                    
