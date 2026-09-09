@@ -1,6 +1,21 @@
-mkdir -p /proc /sys /dev /sys/kernel/debug ; mount -t proc proc /proc ; mount -t sysfs sysfs /sys ; mount -t devtmpfs devtmpfs /dev ; mount -t debugfs debugfs /sys/kernel/debug
+```
+mmc@31152000: 0                                            
+Loading Environment from nowhere... OK                     
+In:    serial@0x31003000                                   
+Out:   serial@0x31003000                                   
+Err:   serial@0x31003000                                   
+Net:   eth0: eth0                                          
+Hit any key to stop autoboot:  0                           
+=>                                                         
+=>                                                         
+=>                                                         
+=> mmc rescan                                              
+CMD_SEND:0                                                 
+                ARG                      0x00000000        
+                RET                      -110              
+=>                                                         
 
-devmem 0x3108F004 32 0x00000003
+```
 
 ```
 devmem 0x3108E00C 32 0x02034581
