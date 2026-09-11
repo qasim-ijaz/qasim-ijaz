@@ -1,1 +1,1 @@
-Linux kernel developer @ [ADI](https://github.com/analogdevicesinc)
+Linux kernel developer @ [Analog Devices](https://github.com/analogdevicesinc)
